@@ -26,10 +26,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if(\APP::environment(['production'])) {
-            \URL::forseScheme('https');
+        //if(\APP::environment(['production'])) {
+        //    \URL::forseScheme('https');
             
-        }
+        //}
         Schema::defaultStringLength(191);
     }
 }
